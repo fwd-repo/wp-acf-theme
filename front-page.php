@@ -2,6 +2,7 @@
 get_header();
 $title = get_field('page_title');
 $description = get_field('description');
+$other_description = get_field('other_description');
 ?>
 
 
@@ -25,6 +26,10 @@ $description = get_field('description');
                 <?php if($description):?>
                     <?php echo nl2br($description);?>
                 <?php endif;?>
+
+                <?php if($other_description): ?>
+                    <?php echo $other_description;?>
+                <?php endif; ?>
 
 
 
