@@ -3,6 +3,7 @@ get_header();
 $title = get_field('page_title');
 $description = get_field('description');
 $other_description = get_field('other_description');
+$my_input = get_field('my_input');
 ?>
 
 
@@ -29,6 +30,10 @@ $other_description = get_field('other_description');
 
                 <?php if($other_description): ?>
                     <?php echo $other_description;?>
+                <?php endif; ?>
+
+                <?php if($my_input): ?>
+                    <?php echo $my_input;?>
                 <?php endif; ?>
 
 
