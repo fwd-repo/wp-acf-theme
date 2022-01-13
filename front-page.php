@@ -1,4 +1,7 @@
-<?php get_header();?>
+<?php 
+get_header();
+$title = get_field('page_title');
+?>
 
 
 <section class="page">
@@ -13,6 +16,10 @@
                 <?php the_content(); ?>
 
                 <?php endwhile; else: endif; ?>
+
+                <?php if($title):?>
+                    <p><?php echo $title;?></p>
+                <?php endif; ?>
 
 
 
